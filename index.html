@@ -171,6 +171,122 @@
                                 </tr>
                             </table>
                         </div>
+                        <div>
+                            <ul id="errores">
+                                <li> <!--Nombre-->
+                                  <div class="col">
+                                    <label for="nombre" class="col-sm-2 col-form-label">Nombre Completo</label>
+                                    <input name="nombre" type="text"  id="nombre"  required/>
+                                    <div class="valid-feedback">
+            
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        El nombre es obligatorio
+                                      </div>
+                                  </div>
+                                </li> <!--Nombre-->
+            
+                                <li> <!--EDAD-->
+                                  <div class="col">
+                                    <label for="edad" class="col-sm-2 col-form-label">Edad</label>
+                                    <input name="edad" type="number"  id="edad" min="0" max="150"  required>
+                                    <div class="valid-feedback">
+                                      
+                                    </div>
+                                    <div class="invalid-feedback">
+                                      ingrese una edad correcta
+                                    </div>
+            
+                                  </div>
+                                </li> <!--EDAD-->
+            
+                                <li> <!--GENERO-->
+                                  <div class="col">
+                                    <label for="genero" class="col-sm-2 col-form-label">Género</label>
+                                    <select name="genero" id="genero">
+                                      <option value="Hombre"> Hombre </option>
+                                      <option value="Mujer"> Mujer </option>
+                                    </select>
+                                  </div>
+                                </li> <!--GENERO-->
+                                <li> <!--FECHA DE NACIMIENTO-->
+                                  <div class="col">
+                                    <label for="fecha" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
+                                    <input type="date" name="fecha" id="fecha">
+                                  </div>
+                                </li> <!--FECHA DE NACIMIENTO-->
+                                <li> <!--CORREO-->
+            
+                                  <div class="col">
+            
+                                    <label for="correo" class="col-sm-2 col-form-label">Correo Electrónico</label>
+                                    <input type="email"  id="correo"  required/>
+                                    <div class="valid-feedback">
+                                        El formato del correo esta bien escrito
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        No es el formato correcto
+                                      </div>
+            
+                                  </div>
+                                </li><!--CORREO-->
+                                <li> <!--Telefono-->
+            
+                                  <div class="col">
+            
+                                    <label for="telefono" class="col-sm-2 col-form-label">Número Telefónico</label>
+                                    <input type="tel"  id="telefono"  maxlength="9" pattern="[0-9]{9}" required/>
+                                    <div class="valid-feedback">
+            
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        El telefono es incorrecto
+                                      </div>
+            
+                                  </div>
+            
+                                </li><!--Telefono-->
+            
+                                <li> <!--RUT-->
+                                  <div class="col">
+            
+                                    <label for="rut" class="col-sm-2 col-form-label">RUT</label>
+                                    <!--required="required" pattern="\d{3,8}-[\d|kK]{1}"-->
+                                    <input type="text" id="rut" placeholder="ejemplo: 20704596-9" maxlength="10" required="required" pattern="\d{3,8}-[\d|kK]{1}" />
+                                    
+                                    <div class="valid-feedback">
+                                        El formato rut esta bien
+                                      </div>
+                                      <div class="invalid-feedback">
+                                        No es el formato correcto
+                                      </div>
+            
+                                  </div>
+                                </li> <!--RUT-->
+                                <li> <!--REGION-->
+                                  <div class="col">
+                                    <label for="region" class="col-sm-2 col-form-label">Región</label>
+                                    <select name="region" id="region" >
+                                      <option value="0"> --Selecciona una región-- </option>
+                                      <option value="1"> Valparaíso </option>
+                                      <option value="2"> Antofagasta </option>
+                                    </select>
+                                  </div>
+                                </li> <!--REGION-->
+            
+                                <li> <!--COMUNA-->
+                                  <div class="col">
+                                    <label for="comuna" class="col-sm-2 col-form-label">Comuna</label>
+                                    <select name="comuna" id="comuna">
+                                      <option> --Seleccione una comuna-- </option>
+                                    </select>
+                                  </div>
+                                </li> <!--COMUNA-->
+                                <li>
+                                  <button class="btn btn-primary" type="submit">Actualizar</button>
+                                </li> 
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </form>
