@@ -1,0 +1,34 @@
+body {
+  font-size: 12px; }
+
+form ul {
+  list-style-type: none; }
+
+ #foto {
+   display: flex;
+   flex-wrap: wrap;
+   width: 150px;
+   height: 150px;
+   border: 1px solid;
+ } 
+
+ ul #signos {
+   flex-wrap: wrap;
+   display: flex;
+   border: 1px solid;
+   justify-content: space-between;
+ }
+
+ ul #antecedentes {
+   text-align-last: right;
+ }
+
+ ul #segundoCuadro {
+   justify-content: space-between;
+ }
+
+
+
+#minicuadro {
+  border: 1px solid;
+}
