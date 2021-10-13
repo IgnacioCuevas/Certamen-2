@@ -1,9 +1,43 @@
-$tamanyo:12px;
 
-body {
-    font-size: $tamanyo;
+#foto {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+} 
+
+ul #signos {
+    flex-wrap: wrap;
+    display: flex;
+    border: 1px solid;
+    justify-content: space-between;
 }
 
-form ul {
-    list-style-type: none;
+ul #antecedentes {
+    text-align-last: right;
+}
+
+ul #segundoCuadro {
+    justify-content: space-between;
+}
+
+
+
+#minicuadro {
+    border: 1px solid;
+}
+
+p{
+    text-align: left;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 20px;
+    text-align: left;
+}
+h2{
+    text-align: left;
+    font-size: 20px;
 }
